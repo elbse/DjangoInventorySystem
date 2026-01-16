@@ -6,12 +6,12 @@ class ProductForm(forms.ModelForm):
         model = Product
         fields = '__all__'
         labels = {
-            'product_id': 'Product ID'
+            'product_id': 'Product ID',
             'name': 'Product Name',
             'sku': 'SKU',
             'price': 'Price',
             'quantity': 'Quantity',
-            'supplier': 'Supplier'
+            'supplier': 'Supplier',
         }
         widgets = {
             'product_id': forms.NumberInput(attrs={
